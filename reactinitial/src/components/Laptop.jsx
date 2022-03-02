@@ -2,9 +2,9 @@ import React from "react";
 import { useState } from "react";
 
 const Laptop = ({laptop}) => {
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
   const toggle= () => {
-    if(isShown===true) {setIsShown(false)}
+    if(isShown===false) {setIsShown(true)}
   }
     return (
       <div>
