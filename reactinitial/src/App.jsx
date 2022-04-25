@@ -6,14 +6,12 @@ import Laptop from "./components/Laptop";
 const App = () => {
 
  const [isLoading, setisLoading] = useState(true);
- const [laptops, setLaptops] = useState([]);
 
  const [inputValue, setInputValue] = useState("");
 
   const load = () => {
     axios.get("https://demoapi.com/api/laptop")
     .then((response) => {
-      setisLoading(false);
       setLaptops(response.data);
     });
   }
